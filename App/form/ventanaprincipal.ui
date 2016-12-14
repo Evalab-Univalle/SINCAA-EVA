@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Fabian Andres Payan Meneses</author>
+ <class>VentanaPrincipal</class>
+ <widget class="QMainWindow" name="VentanaPrincipal">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>462</width>
+    <height>337</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>SICA</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="img/fuente_imagenes.qrc">
+    <normaloff>:/controles/sica-icon.png</normaloff>:/controles/sica-icon.png</iconset>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QWidget#centralwidget {
+   
+	background-color: rgb(255, 255, 255);
+ }
+
+/*QMainWindow#MainWindow{
+	background-color: rgba(240, 248, 255, 100);
+}*/
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QGraphicsView" name="graphicsView">
+    <property name="geometry">
+     <rect>
+      <x>-40</x>
+      <y>-30</y>
+      <width>531</width>
+      <height>341</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-image: url(:/controles/scan-bgimage.jpg);
+border: none;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>462</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+   <widget class="QMenu" name="menuArchivo">
+    <property name="title">
+     <string>Examen</string>
+    </property>
+    <addaction name="actionNuevo_proyecto"/>
+    <addaction name="actionAbrir_proyecto"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <widget class="QMenu" name="menuHerramientas">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="title">
+     <string>Herramientas</string>
+    </property>
+    <addaction name="actionConfiguracion"/>
+    <addaction name="actionSubirArchivo"/>
+   </widget>
+   <addaction name="menuArchivo"/>
+   <addaction name="menuHerramientas"/>
+  </widget>
+  <action name="actionNuevo_proyecto">
+   <property name="icon">
+    <iconset resource="img/fuente_imagenes.qrc">
+     <normaloff>:/controles/new-file-icon.png</normaloff>:/controles/new-file-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Configurar examen</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionAbrir_proyecto">
+   <property name="icon">
+    <iconset resource="img/fuente_imagenes.qrc">
+     <normaloff>:/controles/open-file-icon.png</normaloff>:/controles/open-file-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Calificar examen</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="icon">
+    <iconset resource="img/fuente_imagenes.qrc">
+     <normaloff>:/controles/shutdown-icon.png</normaloff>:/controles/shutdown-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Salir</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionConfiguracion">
+   <property name="icon">
+    <iconset resource="img/fuente_imagenes.qrc">
+     <normaloff>:/controles/settings-icon.png</normaloff>:/controles/settings-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Configuración General</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+  <action name="actionSubirArchivo">
+   <property name="icon">
+    <iconset resource="img/fuente_imagenes.qrc">
+     <normaloff>:/controles/upload-icon.png</normaloff>:/controles/upload-icon.png</iconset>
+   </property>
+   <property name="text">
+    <string>Subir archivo a Google Drive</string>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+    </font>
+   </property>
+   <property name="iconVisibleInMenu">
+    <bool>true</bool>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="img/fuente_imagenes.qrc"/>
+ </resources>
+ <connections/>
+</ui>

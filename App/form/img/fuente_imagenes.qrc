@@ -1,0 +1,34 @@
+<RCC>
+  <qresource prefix="controles">
+    <file>list-icon.png</file>
+    <file>scan-bgimage.jpg</file>
+    <file>sica-icon.png</file>
+    <file>error-icon.png</file>
+    <file>shutdown-icon.png</file>
+    <file>export-excel-icon.png</file>
+    <file>upload-icon.png</file>
+    <file>excel-icon.png</file>
+    <file>refresh-icon.png</file>
+    <file>settings-icon.png</file>
+    <file>pagination-icon.png</file>
+    <file>bottom-left-icon.png</file>
+    <file>bottom-right-icon.png</file>
+    <file>top-right-icon.png</file>
+    <file>top-left-icon.png</file>
+    <file>folder-icon.png</file>
+    <file>test-icon.png</file>
+    <file>testmultiple-icon.png</file>
+    <file>picture-icon.png</file>
+    <file>delete-table-icon.png</file>
+    <file>new-file-icon.png</file>
+    <file>open-file-icon.png</file>
+    <file>accept-icon.png</file>
+    <file>scanner-icon.png</file>
+    <file>search-icon.png</file>
+    <file>insert-table-icon.png</file>
+    <file>blackboard-drawing-icon.png</file>
+    <file>broom-icon.png</file>
+    <file>delete-icon.png</file>
+    <file>save-icon.png</file>
+  </qresource>
+</RCC>
